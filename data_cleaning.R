@@ -25,7 +25,6 @@ unique_dna <- dna_id[-which(duplicated(dna_id) == TRUE)]
 
 #total number of nucleotide sequences is 39572
 dna_temp <- dna_temp[-which(duplicated(dna_id) == TRUE)]
-length(dna_temp)
 #total number of unique nucleotide sequences 22105
 unique_dna <- unique(dna_temp)
 length(unique_dna)
