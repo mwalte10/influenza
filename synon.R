@@ -1,0 +1,5 @@
+setwd('~/Desktop/CSHL/')
+#library('seqinr')
+dms <- read.csv('h3_dms.csv')
+View(dms)
+trans_mat <- matrix(NA, nrow = 20, ncol = 20)
