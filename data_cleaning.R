@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 setwd('~/Desktop/CSHL/')
+=======
+setwd('~/Desktop/CSHL/raw_data')
+>>>>>>> 29eb77a12322cecdfec65a095115593f7a6f4227
 library('seqinr')
 library('stringr')
 
