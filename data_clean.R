@@ -88,6 +88,13 @@ unique_aa_id <- unique(aa_id)
 id <- unique_aa_id
 
 
+####ORDER EVERYTHING BY DATE
+date <- date[order(date)]
+dna_temp <- dna_temp[order(date)]
+aa_temp <- aa_temp[order(date)]
+id <- id[order(date)]
+
+
 write.fasta(dna_temp, unique_dna_id,'DNA.fasta')
 write.fasta(aa, unique_aa_id,'AA.fasta')
 save(id, file = 'id.RData')
