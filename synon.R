@@ -94,6 +94,7 @@ for(i in 1:length(test_aa)){
 save(dna_gen, file = 'DNA_GEN.RData')
 save(aa_gen, file = 'AA_GEN.RData')
 
+
 #unique DNA sequence table
 which.unique.dna <- which(duplicated(dna_temp) == TRUE)
 unique.date <- date[-which.unique.dna]
@@ -102,6 +103,7 @@ unique.month <- format(date,"%m")[-which.unique.dna]
 unique.day <- format(date,"%d")[-which.unique.dna]
 unique.id <- id[-which.unique.dna]
 unique.dna <- dna_temp[-which.unique.dna]
+unique.dna.aa <- dna_gen[-which.unique.dna, 7]
 
 dna <- cbind(unique.year, unique.month, unique.day,  
              unique.id, unique.dna, rep(0, length(unique.id)))
