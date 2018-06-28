@@ -36,9 +36,9 @@ cols <- (which(mat==1, arr.ind=TRUE))[,2]
 rows <- (which(mat==1, arr.ind=TRUE))[,1]
 new <- cbind(unlist(dna_year[,4])[cols], unlist(dna_year[,4])[rows])
 test <- network(new, matrix.type = 'edgelist', directed = FALSE)
-plot.network(test, main = "2013 DNA Sequence Network \nAll Unique Sequences", vertex.col = 'grey', 
-             usecurve = 0, #vertex.cex = seq(0.2, 1.3, length.out = max(counts))
-             jitter= FALSE)
+# plot.network(test, main = "2013 DNA Sequence Network \nAll Unique Sequences", vertex.col = 'grey', 
+#              usecurve = 0, #vertex.cex = seq(0.2, 1.3, length.out = max(counts))
+#              jitter= FALSE)
 
 sparse_mat <- as(mat, "sparseMatrix") 
 save(test, file = paste('network_', years, '.RData'))
