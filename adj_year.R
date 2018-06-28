@@ -23,5 +23,5 @@ for(i in 1:dim(dna_year)[1]){
   print(i / dim(dna_year)[1])
 }
 
-save(paste('adj_mat_', years, sep = ''), 
-     file = paste('adj_mat_', years, '.RData', sep = ''))
+y <- get(paste('adj_mat_', years, sep = ''))
+save(y, file = paste('adj_mat_', years, '.RData', sep = ''))
