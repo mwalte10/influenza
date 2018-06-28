@@ -41,5 +41,6 @@ test <- network(new, matrix.type = 'edgelist', directed = FALSE)
 #              jitter= FALSE)
 
 sparse_mat <- as(mat, "sparseMatrix") 
-save(test, file = paste('network_', years, '.RData'))
-save(sparse_mat, file = paste('adj_mat_', years, '.RData'))
+save(test, file = paste('/sonas-hs/mccandlish/hpc_norepl/home/walters/network_', years, '.RData'))
+save(sparse_mat, file = paste('/sonas-hs/mccandlish/hpc_norepl/home/walters/adj_mat_', years, '.RData'))
+
