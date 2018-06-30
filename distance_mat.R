@@ -13,4 +13,6 @@ for(i in 1:dim(dna_year)[1]){
 }
 dna_to <- as.character(dna_to)
 
-stringdistmatrix(dna_to)
+dist_mat <- stringdistmatrix(dna_to)
+
+save(dist_mat, file = 'dist_mat.RData')
