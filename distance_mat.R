@@ -1,9 +1,8 @@
 args = commandArgs(TRUE)
 input = as.numeric(args[1])
 
-library(network)
-library(vwr)
-library(RColorBrewer)
+
+library(stringdist)
 load('UNIQUE_DNA.RData')
 dna_2015 <- dna[(which(dna[,1] == 2015 )),]
 dna_2016 <- dna[(which(dna[,1] == 2016 )),]
