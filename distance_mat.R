@@ -5,6 +5,10 @@ library(network)
 library(vwr)
 library(RColorBrewer)
 load('UNIQUE_DNA.RData')
+dna_2015 <- dna[(which(dna[,1] == 2015 )),]
+dna_2016 <- dna[(which(dna[,1] == 2016 )),]
+dna_2017 <- dna[(which(dna[,1] == 2017 )),]
+dna_year <- rbind(dna_2015, dna_2016, dna_2017)
 
 
 dna_to <- list()
