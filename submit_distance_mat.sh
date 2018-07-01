@@ -4,6 +4,5 @@
 #$ -t 1
 
 module load OpenMPI/.1.10.2/R/3.3.3
-. /usr/share/modules/init/bash
 
 Rscript distance_mat.R $SGE_TASK_ID
