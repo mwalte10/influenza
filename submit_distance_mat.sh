@@ -1,6 +1,6 @@
 #!/bin/csh
 
-#$ -N dist_
+#$ -N dista_
 #$ -t 1
 
 
