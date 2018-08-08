@@ -1,6 +1,6 @@
 #SETUP
 {
-setwd('~/Desktop/CSHL/')
+setwd('~/Desktop/CSHL/data')
 load('DNA_GEN.RData')
 load('AA_GEN.RData')
 library(vwr)
@@ -11,6 +11,7 @@ library(vegan)
 years_vec <- c(2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018)
 #load('dist_mat_twenty_clusters.RData')
 #load("years.colors.dist_mat.RData")
+setwd('~/Desktop/CSHL/cluster_analysis')
 load('labels_for_simp.adj.mat.RData')
 load("labels_vec_for_distmat_20_clusters.RData")
 }

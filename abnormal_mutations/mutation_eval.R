@@ -1,7 +1,6 @@
 setwd('~/Desktop/CSHL/')
 load('DNA_GEN.RData')
 load('AA_GEN.RData')
-load('out.list_unique.years.RData')
 mutations <- c('g291d', 'i156r')
 years_vec <- c(2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018)
 labels <- unlist(aa_gen[,4])

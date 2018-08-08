@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid3\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww14140\viewh15500\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs48 \cf0 Intent: 
+\b0\fs24 \
+The purpose of this file was to identify a number of cluster (n.clusters) present in the surveillance sequence data (January 2010 - June 2018). \
+
+\b\fs48 \
+Files:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0
+\b0\fs24 \cf0 {\listtext	\'95	}top_down.R\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Creates the adjacency matrix which identifies the correct number of sequences.\
+{\listtext	\uc0\u8259 	}Requires: \
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural
+\ls1\ilvl2\cf0 {\listtext	\uc0\u8259 	}DNA_GEN.RData (in data file)\
+{\listtext	\uc0\u8259 	}preload.RData (in cluster analysis file)\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Outputs: \
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural
+\ls1\ilvl2\cf0 {\listtext	\uc0\u8259 	}labels.new.new (labels_for_simp.adj.mat.RData)\
+{\listtext	\uc0\u8259 	}mat.new.new: adjacency matrix (adj_mat.RData)\
+{\listtext	\uc0\u8259 	}graph.mat: graph object of adjacency matrix (graph.mat.RData)\
+{\listtext	\uc0\u8259 	}labels_vec: labels for n.clusters amount of clusters (labels_vec_for_distmat_20_clusters.RData)\
+{\listtext	\uc0\u8259 	}ad_mat_clusters: smaller adjacency matrix for n.clusters amount of clusters (adj_mat_parsed_clusters_20_clusters.RData)\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}new_dist_mat.R\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Creates graphs for networks\
+{\listtext	\uc0\u8259 	}Has significance tests\
+{\listtext	\uc0\u8259 	}Clade categorization\
+{\listtext	\uc0\u8259 	}Requires:\
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural
+\ls1\ilvl2\cf0 {\listtext	\uc0\u8259 	}DNA_GEN.RData and AA_GEN.RData (data file)\
+{\listtext	\uc0\u8259 	}labels_for_simp.adj.mat.RData (in cluster_analysis file, product of top_down.R)\
+{\listtext	\uc0\u8259 	}labels_vec_for_distmat_20_clusters.RData (in cluster_analysis file, product of top_down.R)\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Outputs:\
+\pard\tx1660\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li2160\fi-2160\pardirnatural
+\ls1\ilvl2\cf0 {\listtext	\uc0\u8259 	}dist_mat: distance matrix for however many sequences are in the labels vector\
+{\listtext	\uc0\u8259 	}weighted_ms: weighted multidimensional scaling coordinates (weighted_ms_mat.RData)\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}detective.R\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Not super relevant but a systematic way to go through and see if there are any connectors between sequences of a few amino acid differences.\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}building_up.R\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Not up to date. Attempt to build up network. \
+}

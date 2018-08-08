@@ -1,0 +1,16 @@
+load("/Users/maggiewalters/Desktop/CSHL/abnormal_mutations/mutation_list.RData")
+x <- load("/Users/maggiewalters/Desktop/CSHL/abnormal_mutations/mutation_list.RData")
+x
+mutations.synon.year
+load("/Users/maggiewalters/Desktop/CSHL/abnormal_mutations/rug_dates_abnormal_muts.RData")
+x <- load("/Users/maggiewalters/Desktop/CSHL/abnormal_mutations/rug_dates_abnormal_muts.RData")
+x
+date.list
+load("/Users/maggiewalters/Desktop/CSHL/abnormal_mutations/mutation_list.RData")
+mutations.synon.year
+load("/Users/maggiewalters/Desktop/CSHL/data/DNA.RData")
+dna_temp
+load("/Users/maggiewalters/Desktop/CSHL/data/dms_aa_seq.RData")
+x <- load("/Users/maggiewalters/Desktop/CSHL/data/dms_aa_seq.RData")
+x
+maxs
