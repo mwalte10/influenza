@@ -1,0 +1,487 @@
+source("/Users/maggiewalters/Desktop/variance test.xlsx")
+license()
+2+2
+2*4
+log(2)
+log10(2)
+log10(10)
+log(2.71)
+2+2
+cookie<-read.csv("cookie.csv")#
+cookie= read.cswv(file= "cookie.csv")#
+summary(cookie) #this command summarizes the cookie data#
+pepp<-subset(cookie, BRAND=="pepp") #this subsets the data by brand#
+ahoy<-subset(cookie, BRAND=="ahoy")#
+amos<-subset(cookie, BRAND=="amos")#
+dlux<-subset(cookie, BRAND=="dlux")#
+summary(pepp)#
+summary(ahoy)#
+summary(amos)#
+summary(dlux)#
+sd(pepp$MASS) #calculate standard deviation for pepp MASS#
+sd(pepp$DENSITY) #calculate standard deviation for pepp DENSITY#
+sd(ahoy$MASS)#
+sd(ahoy$DENSITY)#
+sd(amos$MASS)#
+sd(amos$DENSITY)#
+sd(dlux$MASS)#
+sd(dlux$DENSITY)#
+help(plot)#
+plot(MASS~BRAND, data=cookie, main="Cookie Mass by Brand", xlab= "Cookie Brand", ylab="Mass (g)")#
+t.test(pepp$MASS, mu=26.0, alternative = "two.sided") #calculates the single sample t-test against the mass of pepp cookies and the "mu" or null hypothesis which is from the packaging#
+dlux.pepp<- subset(cookie, BRAND=="dlux"| BRAND=="pepp") #created a subset of just dlux and pepp#
+dlux.pepp#
+t.test(MASS~BRAND, var.equal=TRUE,data=dlux.pepp)#
+ahoy.pepp<- subset(cookie, BRAND=="ahoy"| BRAND=="pepp")#
+ahoy.pepp#
+t.test(DENSITY~BRAND, var.equal=TRUE,data=ahoy.pepp)#
+t.test(DENSITY~BRAND, var.equal=TRUE,data=ahoy.pepp,paired=TRUE)
+ls()
+2+2
+wingcrd= (59,55,53.5,55,52.5,57.5,53,55)
+wingcrd=(59,55,53.5,55,52.5,57.5,53,55)
+a
+print(a)
+a=59#
+b=55#
+c=53.5#
+d=55#
+e=52.5
+a
+wing1=59#
+wing2=55#
+wing3=53.4#
+wing4=55#
+wing5=52.5
+wing1
+2*wing1
+avg(wing1, wing2, wing3, wing4, wing5)
+sumofwings=wing1+wing2+wing3+wing4+wing5
+sumofwings/5
+wing3=53.5
+sumofwings/5
+sumofwings=wing1+wing2+wing3+wing4+wing5
+sumofwings/5
+sum.12=wing1+wing2#
+sum.12
+Wingcrd= c(59,55,53.5,55,52.5,57.5,53,55)
+Wingcrd[6]#
+Wingcrd[2:5]#
+Wingcrd[-1]
+sum(Wingcrd)
+source("/Users/maggiewalters/Desktop/cookie-2.csv")
+source("/Users/maggiewalters/Downloads/cookie.csv")
+source("/Users/maggiewalters/Desktop/cookiefixed.csv")
+cookie<-read.csv("cookie.csv")#
+cookie= read.cswv(file= "cookie.csv")#
+summary(cookie) #this command summarizes the cookie data#
+pepp<-subset(cookie, BRAND=="pepp") #this subsets the data by brand#
+ahoy<-subset(cookie, BRAND=="ahoy")#
+amos<-subset(cookie, BRAND=="amos")#
+dlux<-subset(cookie, BRAND=="dlux")#
+summary(pepp)#
+summary(ahoy)#
+summary(amos)#
+summary(dlux)#
+sd(pepp$MASS) #calculate standard deviation for pepp MASS#
+sd(pepp$DENSITY) #calculate standard deviation for pepp DENSITY#
+sd(ahoy$MASS)#
+sd(ahoy$DENSITY)#
+sd(amos$MASS)#
+sd(amos$DENSITY)#
+sd(dlux$MASS)#
+sd(dlux$DENSITY)#
+help(plot)#
+plot(MASS~BRAND, data=cookie, main="Cookie Mass by Brand", xlab= "Cookie Brand", ylab="Mass (g)")#
+t.test(pepp$MASS, mu=26.0, alternative = "two.sided") #calculates the single sample t-test against the mass of pepp cookies and the "mu" or null hypothesis which is from the packaging#
+dlux.pepp<- subset(cookie, BRAND=="dlux"| BRAND=="pepp") #created a subset of just dlux and pepp#
+dlux.pepp#
+t.test(MASS~BRAND, var.equal=TRUE,data=dlux.pepp)#
+ahoy.pepp<- subset(cookie, BRAND=="ahoy"| BRAND=="pepp")#
+ahoy.pepp#
+t.test(DENSITY~BRAND, var.equal=TRUE,data=ahoy.pepp)#
+t.test(DENSITY~BRAND, var.equal=TRUE,data=ahoy.pepp,paired=TRUE)
+source("/Users/maggiewalters/Downloads/cookie.csv")
+install.packages("diptest")
+library(diptest)
+install.packages("rworldmap")
+install.packages("spam")
+install.packages("Rmisc")
+install.packages("rworldmap")
+install.packages("spam")
+library(spam)
+install.packages("rworldmap")
+getMap(resolution = "low")
+library(rworldmap)
+install.packages("spam")
+library(spam)
+install.packages("PBSmapping")
+library(PBSmapping)
+install.packages("rworldmap")
+library(rworldmap)
+install.packages("spam")
+library(spam)
+install.packages("rworldmap")
+library(rworldmap)
+sample = cor(matrix(rnorm(400), nrow=20))#
+image(cor(matrix(rnorm(400), nrow=20)), axes=F)#
+mtext(text=c(paste("country",1:21)), side=2, line=0.3, at=seq(0,1,0.05), las=1, cex=0.8)#
+mtext(text=c(paste("country",1:21)), side=1, line=0.3, at=seq(0,1,0.05), las=2, cex=0.8)#
+image.plot(sample, legend.only=T)
+library(fields)
+sample = cor(matrix(rnorm(400), nrow=20))#
+image(cor(matrix(rnorm(400), nrow=20)), axes=F)#
+mtext(text=c(paste("country",1:21)), side=2, line=0.3, at=seq(0,1,0.05), las=1, cex=0.8)#
+mtext(text=c(paste("country",1:21)), side=1, line=0.3, at=seq(0,1,0.05), las=2, cex=0.8)#
+image.plot(sample, legend.only=T)
+stringdistancematrix(c('bee', 'bed', 'dad'))
+install.packages('stringdist')
+library(stringdist)
+stringdistancematrix(c('bee', 'bed', 'dad'))
+stringdistmatrix(c('bee', 'bed', 'dad'))
+install.packages('igraph')
+library(igraph)
+bfs(make_ring(10), %du% make_ring(10), root = 1, "out", order = TRUE, rank = TRUe, father = TRUE, pred = TRUE, succ = TRUE, dist = TRUE)
+adjm <- matrix(sample(0:1, 100, replace=TRUE, prob=c(0.85,0.15)), nc=10)
+adjm
+for(i in 1:10)#
+{#
+for (j in 1:10) {#
+  if(i==j)#
+  { adjm[i,j]<-0 }#
+ } }#
+ colnames(adjm)<-c("A","B","C","D","E","F","G","H","I","J")
+adjm
+g1 <- graph_from_adjacency_matrix( adjm )
+g1
+bfst$dist
+bfs(g1)
+bfs(g1, root = 1)
+plot(bfs(g1, root = 1))
+graph.plot(bfs(g1, root = 1))
+x <- bfs(g1, root = 1)
+x$order
+graph.bfs(x)
+graph.bfs(g1)
+graph.bfs(g1, root = 1)
+g <- graph(c(1,2,2,6,1,4,4,6,5,6,1,5,5,3,3,4), directed=FALSE)
+g
+plot(g)
+plot(g1)
+plot(g1, directed = FALSE)
+plot(graph.bfs(g1, root = 1))
+y <- make_ring(1000)
+y
+bfsy <- bfs(y, root = 1, "all", order = TRUE)
+bfsy
+suby(bfsy$order[1:100])
+suby <- bfsy$order[1:100]
+suby
+newgraph = induced.subgraph(y, suby)
+newgraph
+plot(newgraph)
+V(newgraph)$size = 1
+V(newgraph)$label = NA
+plot(newgraph)
+gIncidenceMatrix <- matrix (c(0,1,1,1,1,0,0,0,1,0,0,1,1,0,1,0), nrow=4, ncol=4, byrow=T)
+gIncidenceMatrix
+g <- graph.adjacency(gIncidenceMatrix, mode = "undirected")
+library(igraph)
+g <- graph.adjacency(gIncidenceMatrix, mode = "undirected")
+g
+plot(g)
+load('dist_mat_redone.RData')
+setwd('~/Desktop/CSHL/')
+load('DNA_GEN.RData')
+library(vwr)#
+library(igraph)#
+library(RColorBrewer)#
+library(DiagrammeR)#
+library(vegan)#
+years_vec <- c(2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018)#
+load('dist_mat_redone.RData')#
+#load("years.colors.dist_mat.RData")#
+load("labels_vec_for_distmat.RData")
+years <- c()#
+for(i in 1:length(labels_vec)){#
+  years[i] <- dna_gen[which(dna_gen[,4] == labels_vec[i]), 1]#
+  print(i / length(labels_vec))#
+}#
+years <- unlist(years)#
+years.colors <- c()#
+colors <- c(brewer.pal(8, "Accent"), "red")#
+for(i in 1:length(years)){#
+  years.colors[i] <- colors[which(years_vec == years[i])]#
+}
+counts <- c()#
+for(i in 1:length(unique(years.colors))){#
+  counts[i] <- length(which(years.colors == unique(years.colors)[i]))#
+}#
+counts.indexes <- list()#
+for(i in 1:length(unique(years.colors))){#
+  counts.indexes[[i]] <- which(years.colors == unique(years.colors)[i])#
+}#
+weights <- list()#
+for(i in 1:length(counts.indexes)){#
+  weights[[i]] <- rep((1/ length(counts.indexes[[i]])), length(counts.indexes[[i]]))#
+}#
+weights <- unlist(weights)#
+weighted_mds <- wcmdscale(dist_mat, w = weights)
+edges <- list()#
+for(i in 1:ncol(dist_mat)){#
+	right <- which(dist_mat[,i] == 1)#
+	left <- rep(i, length(right))#
+	edges[[i]] <- cbind(left, right)#
+}#
+edges <- do.call(rbind, edges)#
+vertices <- unique(c(edges[,1], edges[,2]))#
+graph.object <- graph.data.frame(edges, vertices, directed = FALSE)#
+layout = weighted_mds(,(1:2))#
+V(graph.object)$name = NA#
+V(graph.object)$color = years.colors
+layout = weighted_mds(,(1:2))
+weighted_mds <- wcmdscale(dist_mat, w = weights)
+plot(weighted_mds)
+weighted_mds
+dim(weighted_mds)
+weighted_mds[,1:2]
+edges <- list()#
+for(i in 1:ncol(dist_mat)){#
+	right <- which(dist_mat[,i] == 1)#
+	left <- rep(i, length(right))#
+	edges[[i]] <- cbind(left, right)#
+}#
+edges <- do.call(rbind, edges)#
+vertices <- unique(c(edges[,1], edges[,2]))#
+graph.object <- graph.data.frame(edges, vertices, directed = FALSE)
+layout =  weighted_mds[,1:2]
+V(graph.object)$name = NA
+V(graph.object)$color = years.colors
+plot(graph.object, edge.curve = 0, layout = layout)
+layout =  weighted_mds[,1:2]#
+V(graph.object)$name = NA#
+V(graph.object)$color = years.colors#
+E(graph.object)$curved = 0#
+V(graph.object)$size = 5#
+plot(graph.object, layout = layout)
+V(graph.object)$size = 3
+plot(graph.object, layout = layout)
+layout =  c(weighted_mds[,2], weighted_mds[,1])
+plot(graph.object, layout = layout)
+layout =  cbind(weighted_mds[,2], weighted_mds[,1])
+plot(graph.object, layout = layout)
+legend('bottomright', legend = years_vec, col = colors, cex = 0.8)
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+plot(graph.object, layout = layout)
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 10 Clusters")
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 10 Clusters")#
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+save(dist_mat, file = 'dist_mat_ten_clusters.RData')
+load('graph.mat.RData')
+clusters <- clusters(graph.mat)#
+n.cluster <- 20#
+biggest_clusters <- tail(sort(clusters$csize), n.cluster)#
+group <- list()#
+for(i in 1:length(biggest_clusters)){#
+  group[[i]] <- which(clusters$csize == biggest_clusters[i])#
+}#
+group <- unlist(group)#
+labels_group <- labels[group]#
+clusters_groups <- list()#
+for(i in 1:length(group)){#
+  clusters_groups[[i]] <- which(clusters$membership == group[i])#
+}
+clusters_groups <- list()#
+for(i in 1:length(group)){#
+  clusters_groups[[i]] <- which(clusters$membership == group[i])#
+}#
+labels_vec <- labels.new.new[unlist(clusters_groups)]
+load('labels_for_simp.adj.mat.RData')
+labels_vec <- labels.new.new[unlist(clusters_groups)]
+length(labels_vec)
+adj_mat_clusters <- mat.new.new[unlist(clusters_groups), unlist(clusters_groups)]
+load('adj_mat.RData')
+adj_mat_clusters <- mat.new.new[unlist(clusters_groups), unlist(clusters_groups)]
+save(adj_mat_clusters, file = 'adj_mat_parsed_clusters_20_clusters.RData')
+dim(adj_mat_clusters)
+save(labels_vec, file = "labels_vec_for_distmat_20_clusters.RData")
+load("labels_vec_for_distmat_20_clusters.RData")
+dna_to <- c()#
+for(i in 1:length(labels_vec)){#
+  seq <- unlist(dna_gen[which(dna_gen[,4] == labels_vec[i]),5])[1: (566 * 3)]#
+  if(any(is.na(seq))){next}#
+  dna_to[i] <- paste(seq, collapse = '')#
+  print(i / length(labels_vec))#
+}
+length(dna_to)
+ham_dist <- function(k){#
+  comp <- dna_to[k]#
+  to <- dna_to#
+  ham <- hamming.neighbors(as.character(comp), as.character(to))#
+  if(length(ham) == 0){return(0)}#
+  dist <- list()#
+  for(i in 1:length(ham)){#
+    seqs <- ham[[i]]#
+    dist_this <- c()#
+    for(j in 1:length(seqs)){#
+    dist_this[j] <- 	which(seqs[j] == dna_to)#
+    }#
+    dist[[i]] <- dist_this#
+  }#
+  return(dist)#
+}#
+#
+dist_mat <- matrix(NA, ncol = length(dna_to), nrow = length(dna_to))#
+for(k in 1:ncol(dist_mat)){#
+	output <- ham_dist(k)#
+	for(q in 1:length(output)){#
+		if(is.null(output[[1]])){next}#
+		dist_mat[output[[q]],k] <- q#
+	}#
+	print(k / ncol(dist_mat))#
+}#
+for(i in 1:ncol(dist_mat)){#
+	dist_mat[i,i] <- 0#
+}
+save(dist_mat, file = 'dist_mat_twenty_clusters.RData')
+dim(dist_mat)
+length(labels_vec)
+years <- c()#
+for(i in 1:length(labels_vec)){#
+  years[i] <- dna_gen[which(dna_gen[,4] == labels_vec[i]), 1]#
+  print(i / length(labels_vec))#
+}#
+years <- unlist(years)#
+years.colors <- c()#
+colors <- c(brewer.pal(8, "Accent"), "red")#
+for(i in 1:length(years)){#
+  years.colors[i] <- colors[which(years_vec == years[i])]#
+}
+counts <- c()#
+for(i in 1:length(unique(years.colors))){#
+  counts[i] <- length(which(years.colors == unique(years.colors)[i]))#
+}#
+counts.indexes <- list()#
+for(i in 1:length(unique(years.colors))){#
+  counts.indexes[[i]] <- which(years.colors == unique(years.colors)[i])#
+}#
+weights <- list()#
+for(i in 1:length(counts.indexes)){#
+  weights[[i]] <- rep((1/ length(counts.indexes[[i]])), length(counts.indexes[[i]]))#
+}#
+weights <- unlist(weights)#
+weighted_mds <- wcmdscale(dist_mat, w = weights)
+edges <- list()#
+for(i in 1:ncol(dist_mat)){#
+	right <- which(dist_mat[,i] == 1)#
+	left <- rep(i, length(right))#
+	edges[[i]] <- cbind(left, right)#
+}#
+edges <- do.call(rbind, edges)#
+vertices <- unique(c(edges[,1], edges[,2]))#
+graph.object <- graph.data.frame(edges, vertices, directed = FALSE)#
+layout =  cbind(weighted_mds[,2], weighted_mds[,1])#
+V(graph.object)$name = NA#
+V(graph.object)$color = years.colors#
+E(graph.object)$curved = 0#
+V(graph.object)$size = 3#
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 10 Clusters")#
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 20 Clusters")
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+setwd('~/Desktop/CSHL/')#
+load('DNA_GEN.RData')#
+library(vwr)#
+library(igraph)#
+library(RColorBrewer)#
+library(DiagrammeR)#
+library(vegan)#
+years_vec <- c(2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018)#
+#load('dist_mat_redone.RData')#
+#load("years.colors.dist_mat.RData")#
+load("labels_vec_for_distmat_20_clusters.RData")
+load('dist_mat_twenty_clusters.RData')
+dna_to <- c()#
+for(i in 1:length(labels_vec)){#
+  seq <- unlist(dna_gen[which(dna_gen[,4] == labels_vec[i]),5])[1: (566 * 3)]#
+  if(any(is.na(seq))){next}#
+  dna_to[i] <- paste(seq, collapse = '')#
+  print(i / length(labels_vec))#
+}
+years <- c()#
+for(i in 1:length(labels_vec)){#
+  years[i] <- dna_gen[which(dna_gen[,4] == labels_vec[i]), 1]#
+  print(i / length(labels_vec))#
+}#
+years <- unlist(years)#
+years.colors <- c()#
+colors <- c(brewer.pal(8, "Accent"), "red")#
+for(i in 1:length(years)){#
+  years.colors[i] <- colors[which(years_vec == years[i])]#
+}
+counts <- c()#
+for(i in 1:length(unique(years.colors))){#
+  counts[i] <- length(which(years.colors == unique(years.colors)[i]))#
+}#
+counts.indexes <- list()#
+for(i in 1:length(unique(years.colors))){#
+  counts.indexes[[i]] <- which(years.colors == unique(years.colors)[i])#
+}#
+weights <- list()#
+for(i in 1:length(counts.indexes)){#
+  weights[[i]] <- rep((1/ length(counts.indexes[[i]])), length(counts.indexes[[i]]))#
+}#
+weights <- unlist(weights)#
+weighted_mds <- wcmdscale(dist_mat, w = weights)#
+plot(weighted_mds, col = years.colors)#
+#
+##get cluster formatting#
+edges <- list()#
+for(i in 1:ncol(dist_mat)){#
+	right <- which(dist_mat[,i] == 1)#
+	left <- rep(i, length(right))#
+	edges[[i]] <- cbind(left, right)#
+}#
+edges <- do.call(rbind, edges)#
+vertices <- unique(c(edges[,1], edges[,2]))#
+graph.object <- graph.data.frame(edges, vertices, directed = FALSE)#
+layout =  cbind(weighted_mds[,2], weighted_mds[,1])#
+V(graph.object)$name = NA#
+V(graph.object)$color = years.colors#
+E(graph.object)$curved = 0#
+V(graph.object)$size = 3#
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 20 Clusters")#
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+max(layout[,2])
+min(layout[,2])
+max(layout[,1])
+min(layout[,1])
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 20 Clusters", xlim =c(-19, 37), ylim = c(-23, 23))
+plot(graph.object, layout = layout, main = "MDS network plot, \nTop 20 Clusters")
+legend('bottomright', legend = years_vec, fill = colors, cex = 0.8)
+locator()
+setwd(~/Desktop/CSHL)
+setwd('~/Desktop/CSHL/')
+load('rug_plots_abnormal.RData')
+x <- load('rug_plots_abnormal.RData')
+x
+rug_plots_abnormal
+x <- load('rug_plots_abnormal_muts.RData')
+x <- load('rug_data_abnormal_muts.RData')
+x <- load('rug_dates_abnormal_muts.RData')
+x
+date.list
+load("/Users/maggiewalters/Desktop/CSHL/adj_mat.RData")
+mat.new.new
+dim(mat.new.new)
+load("/Users/maggiewalters/Desktop/CSHL/labels_vec_for_distmat.RData")
+length(labels_vec)
+load("/Users/maggiewalters/Desktop/CSHL/dms_aa_seq.RData")
+x <- load("/Users/maggiewalters/Desktop/CSHL/dms_aa_seq.RData")
+x
+maxs
+x <- load("/Users/maggiewalters/Desktop/CSHL/distance_mat_for_wmds.RData")
+x
+new.test
+dim(new.test)
